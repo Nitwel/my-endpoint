@@ -1,0 +1,47 @@
+{
+    "name": "@nitwel/directus-extension-my-endpoint",
+    "description": "Please enter a description for your extension",
+    "icon": "extension",
+    "version": "1.0.0",
+    "type": "module",
+    "keywords": [
+        "directus",
+        "directus-extension",
+        "directus-custom-endpoint"
+    ],
+    "directus:extension": {
+        "debugger": true,
+        "secure": true,
+        "type": "endpoint",
+        "path": "dist/index.js",
+        "source": "src/index.js",
+        "host": "^10.0.0",
+        "permissions": [
+            {
+                "permission": "fetch",
+                "options": {
+                    "allowed_urls": [
+                        "https://api.github.com/.*"
+                    ]
+                }
+            },
+            {
+                "permission": "service.items",
+                "optional": true,
+                "options": {
+                    "allowed_collections": [
+                        "text"
+                    ]
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "build": "directus-extension build",
+        "dev": "directus-extension build -w --no-minify",
+        "link": "directus-extension link"
+    },
+    "devDependencies": {
+        "@directus/extensions-sdk": "10.1.7"
+    }
+}
