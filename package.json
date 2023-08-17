@@ -1,8 +1,8 @@
 {
     "name": "@nitwel/directus-extension-my-endpoint",
-    "description": "Please enter a description for your extension",
+    "description": "My Secure Endpoint",
     "icon": "extension",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "module",
     "author": {
         "name": "Nitwel",
@@ -27,6 +27,7 @@
         "permissions": [
             {
                 "permission": "fetch",
+                "optional": true,
                 "options": {
                     "allowed_urls": [
                         "https://api.github.com/.*"
@@ -35,12 +36,15 @@
             },
             {
                 "permission": "service.items",
-                "optional": true,
                 "options": {
                     "allowed_collections": [
                         "text"
                     ]
                 }
+            },
+            {
+                "permission": "service.flows",
+                "optional": true
             }
         ]
     },
