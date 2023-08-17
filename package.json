@@ -2,8 +2,16 @@
     "name": "@nitwel/directus-extension-my-endpoint",
     "description": "Please enter a description for your extension",
     "icon": "extension",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
+    "author": {
+        "name": "Nitwel",
+        "email": "mail@nitwel.de"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Nitwel/my-endpoint.git"
+    },
     "keywords": [
         "directus",
         "directus-extension",
