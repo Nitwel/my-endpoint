@@ -17,7 +17,7 @@ export default function (router) {
 
 			await itemsService.createOne({ text: `This was created at ${data.datetime} relative to ${region}/${city}` })
 
-			res.send(`It is ${data.datetime} and this endpoint has been called ${calls} times`)
+			res.send(`It is ${data.datetime} and this endpoint has been called ${calls} times, version 2.0!!`)
 		} catch (error) {
 			res.send(`${error}`)
 		}

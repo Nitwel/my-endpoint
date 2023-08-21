@@ -2,7 +2,7 @@
     "name": "@nitwel/directus-extension-my-endpoint",
     "description": "My Secure Endpoint",
     "icon": "extension",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "type": "module",
     "author": {
         "name": "Nitwel",
